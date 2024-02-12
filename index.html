@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy/O1/Aho5B721FjSauP1TW5z12s2V2lGY" crossorigin="anonymous">
+    <title>Calculadora de Área de Rectángulo</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Calculadora de Área de Rectángulo</h1>
+        <form id="rectanguloForm">
+            <div class="form-group">
+                <label for="base">Base:</label>
+                <input type="number" class="form-control" id="base" required>
+            </div>
+            <div class="form-group">
+                <label for="altura">Altura:</label>
+                <input type="number" class="form-control" id="altura" required>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="calcularArea()">Calcular Área</button>
+            <button type="button" class="btn btn-secondary ml-2" onclick="limpiarCampos()">Limpiar Campos</button>
+        </form>
+        <div id="resultado" class="mt-3"></div>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
